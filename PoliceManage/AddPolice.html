@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>添加辅警</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../Font/iconfont.css">
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/main.css"/>
+</head>
+<body>
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">添加辅警
+        <a href="../Index.html" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <div class="reader_pic">
+        <input type="file" id="file" name="file" onchange="Events.GetPic();">
+        <!--  <img src="WeChat/images/2.jpg" width="84" class="img2">-->
+        <div id="img"><img src="../Images/icon3.png" width="40px"></div>
+        <p>添加照片</p>
+    </div>
+    <ul class="form_list">
+        <li><span class="name"><span class="red">*</span>工号</span><input class="input_text2"></li>
+        <li><span class="name"><span class="red">*</span>员工姓名</span><input class="input_text2"></li>
+        <li><span class="name"><span class="red">*</span>出生日期 </span>
+            <input class="input_text2">
+            <span class="right_icon"><i class="iconfont icon-jiantouyoujiantou"></i></span>
+        </li>
+        <li><span class="name"><span class="red">*</span>联系电话</span><input class="input_text2">
+            <!-- 删除按钮 -->
+            <span class="delete_icon" onclick="$(this).prev().val('');$(this).hide();"><img src="../images/delete.jpg"> </span>
+            <span class="right_icon scale_08"></span>
+        </li>
+        <li><span class="name"><span class="red">*</span>职务</span>
+            <select class="select" id="userType"><option value="0">请选择</option> <option value="523">中级读者</option> <option value="522">初级读者</option></select>
+            <span class="right_icon"><i class="iconfont icon-jiantouyoujiantou"></i></span>
+        </li>
+        <li><span class="name">所属部门</span><select class="select">
+            <option value="0">请选择</option>
+            <option value="2">生产部</option>
+            <option value="3">工程部</option>
+        </select><span class="right_icon"><i class="iconfont icon-jiantouyoujiantou"></i></span></li>
+        <li><span class="name"><span class="red">*</span>性别 </span>
+            <select class="select">
+                <option value="1">男</option>
+                <option value="2">女</option>
+            </select>
+            <span class="right_icon"><i class="iconfont icon-jiantouyoujiantou"></i></span>
+        </li>
+        <li><span class="name">学历</span><input class="input_text2"></li>
+        <li><span class="name">住址</span><input class="input_text2"></li>
+
+    </ul>
+</div>
+</body>
+</html>

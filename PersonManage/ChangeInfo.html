@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>调配记录</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../Font/iconfont.css">
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/main.css"/>
+</head>
+<body>
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">调配记录
+        <a href="../Index.html" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <ul class="search">
+        <li class="a_list">
+            <label class="select_radio"><input type="radio" value="1" name="selectName" checked="" onclick="Events.ChangeName();"><a href="javascript:void(0)">姓名</a></label>
+            <label class="select_radio"><input type="radio" value="2" name="selectName" onclick="Events.ChangeName();"><a href="javascript:void(0)">调动时间</a></label>
+            <label class="select_radio"><input type="radio" value="3" name="selectName" onclick="Events.ChangeName();"><a href="javascript:void(0)">单位</a></label>
+        </li>
+        <li class="selectName01"><input id="str" type="text" onkeyup="ShowIcon($(this).val())" class="input_text4" placeholder="输入姓名">
+            <!-- 删除按钮 -->
+            <span class="delete_icon" onclick="$(this).prev().val('');$(this).hide();"><img src="WeChat/images/delete.jpg"></span>
+            <span class="right_icon top33"><a href="javascript:void(0)" onclick="Events.Seach();"><i class="iconfont icon-sousuolan-sousuo"></i></a>
+             </span>
+        </li>
+        <li class="selectName02" style="display:none;"><input id="str" type="text" onkeyup="ShowIcon($(this).val())" class="input_text4" placeholder="输入调动时间">
+            <!-- 删除按钮 -->
+            <span class="delete_icon" onclick="$(this).prev().val('');$(this).hide();"><img src="WeChat/images/delete.jpg"></span>
+            <span class="right_icon top33"><a href="javascript:void(0)" onclick="Events.Seach();"><i class="iconfont icon-sousuolan-sousuo"></i></a>
+             </span>
+        </li>
+        <li class="selectName03" style="display:none;"><select class="input_text4"><option>请选择名称</option></select>
+            <!-- 删除按钮 -->
+            <span class="delete_icon" onclick="$(this).prev().val('');$(this).hide();"><img src="WeChat/images/delete.jpg"></span>
+            <span class="right_icon top33"><a href="javascript:void(0)" onclick="Events.Seach();"><i class="iconfont icon-sousuolan-sousuo"></i></a>
+             </span>
+        </li>
+    </ul>
+    <div id="List" class="bg_f">
+        <div class="borrow_list">
+            <div><label>姓名：</label><span>李青峰</span></div>
+            <div><label>原单位：</label><span>警务保障部</span></div>
+            <div><label>原职位：</label><span>会计</span></div>
+            <div><label>现单位：</label><span>警务保障部</span></div>
+            <div><label>现职位：</label><span>信息员</span></div>
+            <div><label>调动时间：</label><span>2019.01.01</span></div>
+            <div><label>登记人：</label><span>管理员</span></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="Scripts/ChangeInfo.js"></script>
+</body>
+</html>

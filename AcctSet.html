@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>账户设置</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="Font/iconfont.css">
+    <link rel="stylesheet" href="Css/style.css"/>
+    <link rel="stylesheet" href="Css/main.css"/>
+</head>
+<body>
+
+<div class="mm_page">
+    <div class="list_box">
+        <a href="javascript:void(0);" class="pic_a">头像 <img src="Images/head_pic.png" width="77">
+            <input type="file" id="file" accept="image/*" onchange="Events.GetPic();">
+        </a>
+        <div class="list">手机 <span class="right" id="phone">15207781082</span></div>
+        <div class="list">邮箱 <span class="right" id="email">teex2005@126.com</span></div>
+        <a href="ResetPass.html" class="list">密码修改<span class="right_icon"><i class="iconfont icon-jiantouyou"></i></span></a>
+        <div class="list" id="wechatBox"><span>绑定当前微信？</span><a href="javascript:void(0);" class="binding_a">绑定</a></div>
+        <a href="javascript:void(0);" class="btn">退出 </a>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="scripts/Footer.js"></script>
+<script src="Scripts/AccSet.js"></script>
+</body>
+</html>

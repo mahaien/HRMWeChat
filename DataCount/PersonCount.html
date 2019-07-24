@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>人员统计</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../Font/iconfont.css">
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/main.css"/>
+</head>
+<body>
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">人员统计
+        <a href="../Index.html" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <div class="count_box">
+        <div class="count_container" id="main">
+        </div>
+    </div>
+</div>
+<script src="../js/echarts.common.min.js"></script>
+<script src="Scripts/PersonCount.js"></script>
+</body>
+</html>

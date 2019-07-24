@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>审核详情</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../Font/iconfont.css">
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/main.css"/>
+</head>
+<body>
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">审核详情
+        <a href="../Index.html" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <div class="check_details">
+        <div class="check_details_top">
+            <h2>人员录入申请</h2>
+            <p><span>发起人:张三</span> <span>发起时间:2019.02.23</span></p>
+        </div>
+        <div class="check_details_middle">
+            <h2>审核内容</h2>
+            <ul>
+                <li>姓名:李四</li>
+                <li>身份证号码:365252585477</li>
+            </ul>
+        </div>
+        <div class="check_details_bottom">
+            <h2>审核流程</h2>
+            <ul>
+                <li class="clearfix"><span class="oder">1</span><p class="oder_content">张三发起</p></li>
+                <li class="clearfix"><span class="oder oder_grey">2</span><p class="oder_content oder_content_grey">等待李四审核</p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn_box"> <a href="javascript:void(0);" class="btn" id="btn" onclick="Events.DataCheck();">处理</a> </div>
+</div>
+</body>
+</html>

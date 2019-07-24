@@ -1,0 +1,59 @@
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>用户组设置</title>
+</head>
+<body>
+<jsp:include page="../Master/Public.jsp"></jsp:include>
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">用户组设置
+        <a href="/HRM/HRMWeChat/Index.jsp" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <div class="search_sec">
+        <div class="select_search">
+            <i class="iconfont fl"></i>
+            <div class="search_div"><input type="text" id="Str" placeholder="搜索"></div>
+            <a class="delede" href="javascript:void(0);" onclick="Events.CleanStr()" title="删除"><i class="iconfont"></i></a>
+        </div>
+    </div>
+    <ul class="form_list">
+        <li id="Row211">用户组一
+            <span class="right_icon2 ">
+                     <i class="iconfont icon-bianji"></i>
+                </span>
+            <span class="right_icon">
+                      <i class="iconfont icon-shanchu"></i>
+                </span>
+        </li>
+    </ul>
+</div>
+<div class="btn_box"><a href="javascript:void(0);" class="btn2 add" onclick="Events.ShowBox();">添加用户组</a> </div>
+<!--添加弹框-->
+<div class="add_alert" style="display:none;">
+    <div class="add_Bookshelf_Title">编辑用户组
+        <a href="javascript:void(0);" class="title_y_btn">确定</a>
+        <a href="javascript:void(0);" class="title_n_btn" onclick="Events.CloseBox();">取消</a></div>
+    <div class="add_input_box"><input id="name" type="text" class="library_text" placeholder="请输入用户组名称"></div>
+    <div class="add_sec_list">
+        <label class="fl">权限分配<span class="red">*</span></label>
+        <div class="input_div"></div>
+    </div>
+    <ul class="ul_radio">
+        <li id="power1" style=""><label>库存管理<span class="common_radio common_checkbox"><input name="power" value="/Product/" type="checkbox"><a href="javascript:void(0);"></a></span></label></li>
+        <li><label>统计查询<span class="common_radio common_checkbox"><input name="power" value="/Order/" type="checkbox"><a href="javascript:void(0);"></a></span></label></li>
+        <li><label>物资信息<span class="common_radio common_checkbox"><input name="power" value="/Count/" type="checkbox"><a href="javascript:void(0);"></a></span></label></li>
+        <li><label>部门管理<span class="common_radio common_checkbox"><input name="power" value="/User/" type="checkbox"><a href="javascript:void(0);"></a></span></label></li>
+        <li><label>系统管理<span class="common_radio common_checkbox"><input name="power" value="/Evaluation/" type="checkbox"><a href="javascript:void(0);"></a></span></label></li>
+        <li id="power2" style=""><label>数据字典<span class="common_radio common_checkbox"><input name="power" value="/ShopSon/" type="checkbox"><a href="javascript:void(0);"></a></span></label></li>
+    </ul>
+</div>
+<!--添加弹框end--->
+<div class="mark" style="display:none;" onclick="Events.CloseBox();"></div>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="Scripts/PositionAdmin.js"></script>
+</body>
+</html>

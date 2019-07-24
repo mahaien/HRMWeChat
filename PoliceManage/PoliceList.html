@@ -1,0 +1,56 @@
+
+<html>
+<head>
+    <title>辅警列表</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../Font/iconfont.css">
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/main.css"/>
+</head>
+<body>
+
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">辅警列表
+        <a href="../Index.html" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <ul class="search">
+        <li class="a_list">
+            <label class="select_radio"><input type="radio" value="1" name="selectName" checked="" onclick="Events.ChangeName();"><a href="javascript:void(0)">姓名</a></label>
+            <label class="select_radio"><input type="radio" value="2" name="selectName" onclick="Events.ChangeName();"><a href="javascript:void(0)">部门</a></label>
+        </li>
+        <li class="selectName01"><input id="str" type="text" onkeyup="ShowIcon($(this).val())" class="input_text4" placeholder="请输入姓名">
+            <!-- 删除按钮 -->
+            <span class="delete_icon" onclick="$(this).prev().val('');$(this).hide();"><img src="../images/delete.jpg"></span>
+            <span class="right_icon top33"><a href="javascript:void(0)" onclick="Events.Seach();"><i class="iconfont icon-sousuolan-sousuo"></i></a>
+             </span>
+        </li>
+        <li class="selectName02" style="display:none;"><select class="input_text4"><option>请选择部门</option></select>
+            <!-- 删除按钮 -->
+            <span class="delete_icon" onclick="$(this).prev().val('');$(this).hide();"><img src="../images/delete.jpg"></span>
+            <span class="right_icon top33"><a href="javascript:void(0)" onclick="Events.Seach();"><i class="iconfont icon-sousuolan-sousuo"></i></a>
+             </span>
+        </li>
+    </ul>
+    <div id="List">
+        <div class="reader_list clearfix">
+            <a href="" class="left_a">
+                <img src="../Images/2.jpg" class="list_pic">
+                <span class="reader_list_info">
+                   <p>工号：001</p>
+                   <p>员工姓名：张三</p>
+                   <p>性别：女</p>
+                   <p>联系电话：18076590491</p>
+               </span></a>
+            <a class="right_icon" href="javascript:void(0)"><i class="iconfont icon-shanchu"></i></a>
+        </div>
+    </div>
+    <div class="btn_box"> <a href="AddPolice.html" class="btn" id="btn">添加辅警</a> </div>
+</div>
+<script src="../js/jquery-1.8.0.min.js"></script>
+<script src="Scripts/PoliceList.js"></script>
+</body>
+</html>

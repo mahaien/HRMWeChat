@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>奖惩申请</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../Font/iconfont.css">
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/main.css"/>
+</head>
+<body>
+<div class="mm_page">
+    <!--头部-->
+    <div class="head">奖惩申请
+        <a href="../Index.html" class="raturn_index" title="返回首页"></a>
+        <a id="Del" style="display:none" class="right_icon " href="javascript:void(0)" title="删除" onclick="Events.DelBook();"><i class="iconfont5 public_font"></i></a>
+    </div>
+    <!--头部end-->
+    <div class="add_food pt">
+        <div class="add_sec">
+
+            <div class="add_sec_list">
+                <label class="fl">姓名<span class="red">*</span></label>
+                <div class="input_div">
+                    <input type="text" maxlength="30" id="Name" placeholder="输入姓名" class="add_text">
+                </div>
+            </div>
+
+            <div class="add_sec_list">
+                <label class="fl">部门<span class="red">*</span></label>
+                <div class="input_div">
+                    <input type="text" maxlength="30" id="Num" placeholder="部门" class="add_text">
+                </div>
+            </div>
+        </div>
+
+        <div class="add_sec">
+            <div class="add_sec_list">
+                <label class="fl">职位<span class="red">*</span></label>
+                <div class="input_div">
+                </div>
+            </div>
+            <div class="add_sec_list" id="selectRow" style="display:none">
+                <label class="fl">学位<span class="red">*</span></label>
+                <div class="select_type hidden" onclick="Events.SelectProBox();"></div>
+            </div>
+        </div>
+        <div class="add_sec">
+            <div class="add_sec_list">
+                <label class="fl">奖惩选择<span class="red">*</span></label>
+                <div class="input_div ">
+                    <label class="select_radio"><input type="radio" value="1" name="selectName" checked="" onclick="Events.ChangeName();"><a href="javascript:void(0)">奖励</a></label>
+                    <label class="select_radio"><input type="radio" value="2" name="selectName" onclick="Events.ChangeName();"><a href="javascript:void(0)">惩处</a></label>
+                </div>
+            </div>
+        </div>
+        <div class="add_sec">
+            <div class="add_sec_list">
+                <label class="fl">处理方式<span class="red">*</span></label>
+                <div class="input_div"></div>
+            </div>
+            <div class="add_sec_list">
+                <label class="fl">说明<span class="red">*</span></label>
+                <div class="input_div"></div>
+            </div>
+        </div>
+        <div class="add_sec">
+            <div class="add_sec_list">
+                <label class="fl">选择审批人<span class="red">*</span></label>
+                <div class="input_div mr15"></div>
+                <span class="m_bnt">...</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn_box"> <a href="javascript:void(0);" class="btn" id="btn" onclick="Events.DataCheck();">保存</a> </div>
+</body>
+</html>
